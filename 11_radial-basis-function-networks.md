@@ -17,9 +17,11 @@ There are four major methods for RBF training:
 1. **Input layer**: The input layer consists of nodes that pass the input features to the hidden layer. Each node in the input layer corresponds to one feature of the input data. The input layer does not perform any computation.
 
 2. Hidden layer: The hidden layer consists of a set of radial basis function neurons. Each neuron computes the distance between the input and its center (also called a prototype), and applies a radial basis function (RBF) as an activation function. The most commonly used RBF is the Gaussian function, defined as:
+
     $$
         φ(||x-c_i||) = exp(-β_i ||x-c_i||^2)
     $$
+    
     Here, $x$ is the input vector, $c_i$ is the center of the i-th hidden neuron, $β_i$ is a positive constant that determines the spread (or width) of the radial basis function, and $||.||$ denotes the Euclidean distance. The output of each hidden neuron is a measure of similarity between the input and the neuron's center.
 
 3. Output layer: The output layer computes a weighted sum of the hidden layer's outputs to produce the final output. In the case of regression, the output is a continuous value, whereas for classification, the output can be transformed using a softmax function to get class probabilities. The weights of the connections between the hidden layer and the output layer are learned during training.

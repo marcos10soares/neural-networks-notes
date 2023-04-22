@@ -29,11 +29,15 @@ where N is the number of samples, y_i is the true label, f(x_i) is the model's p
 
 The gradient of the MSE with respect to the model parameters (weights and bias) is the vector of partial derivatives of the MSE with respect to each parameter. In the case of the Adaline model, the gradient is given by:
 
+$$
 ∇MSE = (-2/N) * Σ(y_i - f(x_i)) * x_i
+$$
 
 The LMS algorithm updates the model parameters by taking a step in the direction of the negative gradient, scaled by a learning rate (η):
 
+$$
 Δw = -η * ∇MSE
+$$
 
 The learning rate is a hyperparameter that controls the size of the update steps. A smaller learning rate results in smaller, more conservative updates, while a larger learning rate results in larger, more aggressive updates.
 

@@ -2,11 +2,11 @@ Multilayer Perceptrons (MLPs) are a type of artificial neural network (ANN) cons
 
 An MLP typically consists of three types of layers:
 
-    Input layer: This layer represents the input features of the data. Each node in the input layer corresponds to a single input feature.
+- **Input layer**: This layer represents the input features of the data. Each node in the input layer corresponds to a single input feature.
 
-    Hidden layers: These layers are responsible for processing and transforming the input data into a higher-level representation. They consist of multiple neurons, each of which applies an activation function to the weighted sum of its inputs. The number of hidden layers and the number of neurons in each hidden layer can be adjusted according to the complexity of the problem.
+- **Hidden layers**: These layers are responsible for processing and transforming the input data into a higher-level representation. They consist of multiple neurons, each of which applies an activation function to the weighted sum of its inputs. The number of hidden layers and the number of neurons in each hidden layer can be adjusted according to the complexity of the problem.
 
-    Output layer: This layer produces the final output of the network, which can be a continuous value in the case of regression or a probability distribution over classes in the case of classification. Like the neurons in the hidden layers, each neuron in the output layer applies an activation function to the weighted sum of its inputs.
+- **Output layer**: This layer produces the final output of the network, which can be a continuous value in the case of regression or a probability distribution over classes in the case of classification. Like the neurons in the hidden layers, each neuron in the output layer applies an activation function to the weighted sum of its inputs.
 
 The main difference between a single-layer Perceptron and an MLP is the presence of one or more hidden layers. These hidden layers allow the MLP to learn and represent more complex functions compared to a single-layer Perceptron, which can only learn linearly separable patterns.
 
